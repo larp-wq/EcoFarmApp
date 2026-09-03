@@ -17,4 +17,6 @@ EcoFarmApp — Программный комплекс на C# с ИИ-моду�
 Настроить строку подключения к базе данных.
 Нажать `F5` для сборки и запуска.
 
-Сертификация : <img width="1126" height="796" alt="image" src="https://github.com/user-attachments/assets/2793d2dc-954b-4e66-b2b8-47fd231131a2" />
+Сертификация : 
+<img width="1122" height="794" alt="cert" src="https://github.com/user-attachments/assets/8ed73500-9587-4c4c-a515-8a3aa22da0e6" />
+
