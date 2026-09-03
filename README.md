@@ -16,3 +16,5 @@ EcoFarmApp — Программный комплекс на C# с ИИ-моду�
 Открыть файл `EcoFarmApp.sln` в Visual Studio.
 Настроить строку подключения к базе данных.
 Нажать `F5` для сборки и запуска.
+
+Сертификация : <img width="1126" height="796" alt="image" src="https://github.com/user-attachments/assets/2793d2dc-954b-4e66-b2b8-47fd231131a2" />
