@@ -1,0 +1,54 @@
+﻿@model IEnumerable<EcoFarmApp.Models.Animal>
+
+@{
+    ViewData["Title"] = "Список животных";
+}
+
+<h1>Список животных</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Добавить животное</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Species)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HealthStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastVaccination)
+            </th>
+            <th>Действия</th>
+        </tr>
+    </thead>
+    <tbody>
+       @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Species)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HealthStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastVaccination)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.AnimalID">Изменить</a> |
+                <a asp-action="Details" asp-route-id="@item.AnimalID">Инфо</a> |
+                <a asp-action="Delete" asp-route-id="@item.AnimalID">Удалить</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

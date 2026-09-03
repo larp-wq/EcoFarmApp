@@ -1,0 +1,70 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.text-dark.active {
+    background-color: #f8f9fa; /* светлый фон для активного пункта */
+    border-left: 4px solid #0d6efd; /* синяя полоска слева */
+    color: #0d6efd !important; /* синий цвет текста активного пункта */
+    font-weight: 600;
+    border-radius: 0 6px 6px 0; /* закругление правого края */
+    padding-left: 12px; /* отступ слева, чтобы текст не прилипал к полосе */
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Немного уменьшим отступы между пунктами меню */
+.navbar-nav .nav-item {
+    margin-left: 6px;
+}
+
+/* Подправим внешний вид ссылок в navbar: убираем слишком светлую серость по умолчанию */
+.navbar-nav .nav-link {
+    color: #212529; /* стандартный текстовый цвет */
+}
+
+    /* При наведении на пункт (неактивный) — лёгкий фон */
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(13, 110, 253, 0.06); /* прозрачный синий */
+        border-radius: 0 6px 6px 0;
+    }
+
+/* ===== Несколько улучшений для таблиц и кнопок (опционально) ===== */
+.table thead th {
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Мобильные правки: уменьшаем левую полосу при маленьком экране */
+max-width: 575.98px {
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.text-dark.active
+
+{
+    border-left: none;
+    border-top: 3px solid #0d6efd;
+    border-radius: 6px 6px 0 0;
+    padding-left: 8px;
+}
+}

@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4 fw-bold text-success">Эко-Ферма "Благодатная"</h1>
+    <p class="lead">Информационная система управления ресурсами фермерского хозяйства</p>
+    <hr />
+</div>
+
+<div class="row mt-5">
+    <!-- Карточка Продукция -->
+    <div class="col-md-3">
+        <div class="card shadow-sm border-success mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title text-success font-weight-bold">Продукция</h5>
+                <p class="card-text small text-muted">Учет произведенных товаров и цен.</p>
+                <a asp-controller="Products" asp-action="Index" class="btn btn-success btn-block">Перейти</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Карточка Животные -->
+    <div class="col-md-3">
+        <div class="card shadow-sm border-primary mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title text-primary font-weight-bold">Животные</h5>
+                <p class="card-text small text-muted">Состояние здоровья и вакцинация.</p>
+                <a asp-controller="Animals" asp-action="Index" class="btn btn-primary btn-block">Перейти</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Карточка Склад -->
+    <div class="col-md-3">
+        <div class="card shadow-sm border-warning mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title text-warning font-weight-bold">Склад</h5>
+                <p class="card-text small text-muted">Запасы кормов и инвентаря.</p>
+                <a asp-controller="InventoryItems" asp-action="Index" class="btn btn-warning btn-block text-white">Перейти</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Карточка Продажи -->
+    <div class="col-md-3">
+        <div class="card shadow-sm border-danger mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title text-danger font-weight-bold">Продажи</h5>
+                <p class="card-text small text-muted">История сделок и списание остатков.</p>
+                <a asp-controller="Sales" asp-action="Index" class="btn btn-danger btn-block">Перейти</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-info mt-4">
+    <strong>Статус системы:</strong> Подключение к базе данных <strong>MyProjectDB</strong> установлено успешно.
+    Все операции выполняются в режиме реального времени.
+</div>
